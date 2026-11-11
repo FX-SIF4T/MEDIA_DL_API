@@ -1,0 +1,35 @@
+{
+  "name": "media-downloader-api",
+  "version": "1.0.0",
+  "description": "Backend-only Express API for media downloading (btch-downloader) and YouTube search (yt-search), ready for Vercel deployment made by sifat 🐊.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "vercel-build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "btch-downloader": "latest",
+    "cors": "^2.8.6",
+    "express": "^4.22.3",
+    "express-rate-limit": "^7.5.1",
+    "morgan": "^1.12.1",
+    "node-cron": "^3.0.3",
+    "yt-search": "^2.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "downloader",
+    "btch-downloader",
+    "yt-search",
+    "vercel"
+  ],
+  "license": "MIT"
+}
